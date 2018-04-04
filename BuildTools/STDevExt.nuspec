@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>STDevExt</id>
+    <title>STDevExt</title>
+    <version>0.1.0-rc1</version>
+    <authors>Tigran Hambardzumyan</authors>
+    <owners>Tigran Hambardzumyan</owners>
+    <licenseUrl>https://github.com/stdevteam/STDevExt/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/stdevteam/STDevExt</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/77ced451fed68039acebbc0c316c3d66?s=512&r=g&d=retro</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extensions from STDev. Target is .NET 4.6, UWP, Xamarin(Android, iOS, Forms) and .NET Standard 1.3.</description>
+    <copyright>2018 STDev Mobile</copyright>
+    <tags>Rx,Reactive,Extensions,Observable,List</tags>
+    <dependencies>
+      <group targetFramework="net46">
+        <dependency id="System.Reactive" version="4.0.0-preview00001" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="uap10.0">
+        <dependency id="System.Reactive" version="4.0.0-preview00001" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="MonoAndroid">
+        <dependency id="System.Reactive" version="4.0.0-preview00001" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="MonoTouch">
+        <dependency id="System.Reactive" version="4.0.0-preview00001" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="Xamarin.Mac20">
+        <dependency id="System.Reactive" version="4.0.0-preview00001" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="portable-net46+uap+MonoTouch+MonoAndroid">
+        <dependency id="System.Reactive" version="4.0.0-preview00001" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="netstandard1.3">
+        <dependency id="System.Reactive" version="4.0.0-preview00001" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\LICENSE*" target="\" />
+
+    <!-- platform -->
+    <!-- WPF NET46 -->
+    <file src="..\Binary\NET46\STDevExt.NET46.dll" target="lib\net46" />
+    <file src="..\Binary\NET46\STDevExt.NET46.XML" target="lib\net46" />
+    <file src="..\Binary\NET46\STDevExt.NET46.pdb" target="lib\net46" />
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\net46" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\net46" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\net46" />
+
+    <!-- UWP -->
+    <file src="..\Binary\UWP\STDevExt.UWP.dll" target="lib\uap10.0" />
+    <file src="..\Binary\UWP\STDevExt.UWP.XML" target="lib\uap10.0" />
+    <file src="..\Binary\UWP\STDevExt.UWP.pdb" target="lib\uap10.0" />
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\uap10.0" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\uap10.0" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\uap10.0" />
+
+    <!-- Mono.Android -->
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\MonoAndroid" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\MonoAndroid" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\MonoAndroid" />
+    <file src="..\Binary\MonoAndroid\STDevExt.Android.dll" target="lib\MonoAndroid" />
+    <file src="..\Binary\MonoAndroid\STDevExt.Android.XML" target="lib\MonoAndroid" />
+    <file src="..\Binary\MonoAndroid\STDevExt.Android.pdb" target="lib\MonoAndroid" />
+
+    <!-- Mono.Touch -->
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\MonoTouch" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\MonoTouch" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\MonoTouch" />
+    <file src="..\Binary\MonoTouch\STDevExt.iOS.dll" target="lib\MonoTouch" />
+    <file src="..\Binary\MonoTouch\STDevExt.iOS.XML" target="lib\MonoTouch" />
+    <file src="..\Binary\MonoTouch\STDevExt.iOS.pdb" target="lib\MonoTouch" />
+
+    <!-- Xamarin.iOS10 -->
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\Xamarin.iOS10" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\Xamarin.iOS10" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\Xamarin.iOS10" />
+    <file src="..\Binary\MonoTouch\STDevExt.iOS.dll" target="lib\Xamarin.iOS10" />
+    <file src="..\Binary\MonoTouch\STDevExt.iOS.XML" target="lib\Xamarin.iOS10" />
+    <file src="..\Binary\MonoTouch\STDevExt.iOS.pdb" target="lib\Xamarin.iOS10" />
+
+    <!-- Xamarin.Mac Unified -->
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\Xamarin.Mac20" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\Xamarin.Mac20" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\Xamarin.Mac20" />
+
+    <!-- PCL -->
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\portable-net46+uap+MonoTouch+MonoAndroid" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\portable-net46+uap+MonoTouch+MonoAndroid" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\portable-net46+uap+MonoTouch+MonoAndroid" />
+
+    <!-- .net standard -->
+    <file src="..\Binary\netstandard1.3\STDevExt.dll" target="lib\netstandard1.3" />
+    <file src="..\Binary\netstandard1.3\STDevExt.xml" target="lib\netstandard1.3" />
+    <file src="..\Binary\netstandard1.3\STDevExt.pdb" target="lib\netstandard1.3" />
+  </files>
+</package>

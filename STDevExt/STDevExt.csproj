@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Authors>Tigran Hambardzumyan</Authors>
+    <Company>STDev</Company>
+    <Description>Extensions from STDev</Description>
+    <Copyright>2018 STDev Mobile</Copyright>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <PackageTags>Rx,Reactive,Extensions,Observable</PackageTags>
+    <Version>0.1.0.0-rc</Version>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+    <OutputPath>..\Binary\</OutputPath>
+    <DocumentationFile>..\Binary\netstandard1.3\STDevExt.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="4.0.0-preview00001" />
+  </ItemGroup>
+
+</Project>
