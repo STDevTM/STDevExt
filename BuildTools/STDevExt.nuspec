@@ -3,12 +3,12 @@
   <metadata>
     <id>STDevExt</id>
     <title>STDevExt</title>
-    <version>0.1.0-rc1</version>
+    <version>0.1.0-rc2</version>
     <authors>Tigran Hambardzumyan</authors>
     <owners>Tigran Hambardzumyan</owners>
     <licenseUrl>https://github.com/stdevteam/STDevExt/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/stdevteam/STDevExt</projectUrl>
-    <iconUrl>https://secure.gravatar.com/avatar/77ced451fed68039acebbc0c316c3d66?s=512&r=g&d=retro</iconUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/77ced451fed68039acebbc0c316c3d66</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Extensions from STDev. Target is .NET 4.6, UWP, Xamarin(Android, iOS, Forms) and .NET Standard 1.3.</description>
     <copyright>2018 STDev Mobile</copyright>
